@@ -51,15 +51,15 @@ app.listen(port, () => {
 
 module.exports = {app};
 
-var testUser = new User({
-    // email: 'aritra@test.com'
-});
+// var testUser = new User({
+//     // email: 'aritra@test.com'
+// });
 
-testUser.save().then((doc) => {
-    console.log(JSON.stringify(doc, undefined, 2));
-}, (e) => {
-    console.log('Unable to save user', e);
-});
+// testUser.save().then((doc) => {
+//     console.log(JSON.stringify(doc, undefined, 2));
+// }, (e) => {
+//     console.log('Unable to save user', e);
+// });
 
 app.get('/todos/:id', (req, res) => {
     var id = req.params.id;
